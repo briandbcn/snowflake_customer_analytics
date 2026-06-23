@@ -1,5 +1,5 @@
 SELECT
-    c_custkey AS customer_id,
-    c_name AS customer_name,
-    c_nationkey AS nation_id
+    C_CUSTKEY AS CUSTOMER_ID,
+    C_NAME AS CUSTOMER_NAME,
+    C_NATIONKEY AS NATION_ID
 FROM SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.CUSTOMER

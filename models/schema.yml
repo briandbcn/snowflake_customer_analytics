@@ -14,7 +14,7 @@ models:
   - name: stg_orders
     description: "SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.ORDERS"
     columns:
-      - name: o_orderkey
+      - name: order_id
         description: "The primary key for this table"
         data_tests:
           - unique
@@ -23,7 +23,7 @@ models:
   - name: stg_nation
     description: "SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.NATION"
     columns:
-      - name: n_nationkey
+      - name: nation_id
         description: "The primary key for this table"
         data_tests:
           - unique
