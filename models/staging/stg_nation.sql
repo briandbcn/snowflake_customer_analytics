@@ -1,0 +1,4 @@
+SELECT
+    n_nationkey,
+    n_name AS nation
+FROM SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.NATION

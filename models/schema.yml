@@ -1,0 +1,30 @@
+
+version: 2
+
+models:
+  - name: stg_customer
+    description: "SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.CUSTOMER"
+    columns:
+      - name: customer_id
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+
+  - name: stg_orders
+    description: "SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.ORDERS"
+    columns:
+      - name: o_orderkey
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+
+  - name: stg_nation
+    description: "SNOWFLAKE_SAMPLE_DATA.TPCH_SF1.NATION"
+    columns:
+      - name: n_nationkey
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
