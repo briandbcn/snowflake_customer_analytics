@@ -51,3 +51,6 @@ jobs:
 
       - name: Compile dbt Project
         run: dbt compile
+
+      - name: Run dbt tests
+        run: dbt test
