@@ -1,0 +1,22 @@
+name: dbt CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  dbt-ci:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Verify Runner
+        run: |
+          echo "Hello from GitHub Actions!"
+          pwd
+          ls -la

@@ -57,3 +57,47 @@ models:
         description: "Date the order was placed."
         data_tests:
           - not_null
+
+  - name: mart_customer_order_summary
+    description: "Customer summary of report ready fields from intermediate prep: customers, orders, and nations."
+    columns:
+      - name: customer_id
+        description: "Customer key associated with the orders."
+        data_tests:
+          - unique
+          - not_null
+
+      - name: customer_name
+        description: "Customer name associated with the orders."
+        data_tests:
+          - not_null
+
+      - name: nation_name
+        description: "Customer nation from staged nation data."
+        data_tests:
+          - not_null
+
+      - name: order_count
+        description: "Count of order ids across all customer orders."
+        data_tests:
+          - not_null
+
+      - name: total_spend
+        description: "Total spending across all customer orders."
+        data_tests:
+          - not_null
+
+      - name: avg_order_value
+        description: "Average order value across all customer orders."
+        data_tests:
+          - not_null
+
+      - name: first_order
+        description: "Date the first order was placed across all customer orders."
+        data_tests:
+          - not_null
+
+      - name: last_order
+        description: "Date the last order was placed across all customer orders."
+        data_tests:
+          - not_null
