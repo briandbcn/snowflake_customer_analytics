@@ -81,6 +81,9 @@ models:
         description: "Count of order ids across all customer orders."
         data_tests:
           - not_null
+          - accepted_values:
+              arguments:
+                values: [999999999]
 
       - name: total_spend
         description: "Total spending across all customer orders."
