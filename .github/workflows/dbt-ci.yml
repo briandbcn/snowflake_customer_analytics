@@ -15,8 +15,12 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Verify Runner
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Verify Python
         run: |
-          echo "Hello from GitHub Actions!"
-          pwd
-          ls -la
+          python --version
+          pip --version
